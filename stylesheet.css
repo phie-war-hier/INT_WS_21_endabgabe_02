@@ -1,0 +1,554 @@
+ /*Allgemeine Formatierungen*/
+ * {
+  box-sizing: border-box;
+}
+
+
+ @font-face {
+    font-family: 'akzidenz_grotesk';
+    src: url('berthold_akzidenz_grotesk_be_regular-webfont.woff2') format('woff2'),
+         url('berthold_akzidenz_grotesk_be_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+	font-family: "akzidenz_grotesk", Arial, sans-serif;
+	font-size: 18px;
+	padding: 0;
+	margin: 0;
+	hyphens: auto;
+	-webkit- hyphens: auto;
+	-ms- hyphens: auto;
+}
+
+h3 {
+	font-family: 'Reenie Beanie', sans-serif;
+	font-size: 170%;
+	padding: 0;
+	margin: 0 0 5px 0;
+}
+
+.button a {
+	color: #ffffff;
+	padding: 0 4px 0 4px;
+	border-radius: 0.2em;
+	font-family: 'Reenie Beanie', sans-serif;
+	font-size: 150%;
+	font-weight: 500;
+	margin: 5px 0 5px 0;
+}
+
+
+a {
+	color: #000000;
+	text-decoration: none;
+}
+
+
+/*Raster/Aufteilung der Seite*/
+.page {
+	display: flex;
+	flex-flow: row wrap;	
+}
+
+.page-left {
+	width: 20vw;
+}
+
+.page-left img {
+	width: auto;
+	height: 90vh;
+	position: fixed;
+}
+
+.page-left img:hover {
+	width: auto;
+	height: 99vh;
+	transition: all 0.25s ease;
+}
+
+.page-right {
+	width: 75vw;
+	padding: 50px 50px 50px 90px;
+	
+}
+
+@media (max-width: 1000px) {
+	.page-left img {
+		width: auto;
+		height: 85vh;
+		position: fixed;	
+	}
+}
+
+
+
+/*Navigation oben und unten*/
+.nav {
+	width: 100%;
+	margin-left: auto;
+	margin-bottom: 35px;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.nav-left {
+	width: 40%;
+	padding-right: 10px;
+}
+
+.nav-right {
+	width: 60%;
+	margin-left: auto;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-end;
+	align-items: flex-start;
+}
+
+.nav-right .nav-item {
+	width: 22%;
+	position: relative;
+	top: 0px;
+}
+
+.nav-right .nav-item:hover {
+	position: relative;
+	top: 40px;
+	transition: all 0.25s ease;
+}
+
+
+.nav-item.in {
+	position: relative;
+	top: 40px;
+}
+
+.nav-item img {
+	width: 75%;
+	height: auto;
+}
+
+@media (max-width: 1000px) {
+	.nav-left {
+		width: 100%;
+		order: 2;
+	}
+	.nav-right {
+		width: 100%;
+		order: 1;
+		margin-bottom: 80px;
+	}
+	.nav-right .nav-item {
+		width: 18%;
+	}
+	.nav-item img {
+		width: 85%;
+		height: auto;
+	}
+}
+
+/*Formatierung der Inhaltsblöcke*/
+.content {
+	width: 100%;
+	margin-left: auto;
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+.content-item {
+	margin-bottom: 55px;
+}
+
+.content-item p {
+	width: 80%;
+}
+
+.content-item img {
+	width: 100%;
+}
+
+
+/*Formatierung des Teilbereichs Angebote und Produkte*/
+.angebote {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.angebote-item {
+	width: 30%;
+	margin-right: 10px;
+}
+
+.angebote-item.klein {
+	width: 20%;
+	margin-right: 10px;
+}
+
+.angebote-item img {
+	width: 100%;
+	border-radius: 0.2em;
+}
+
+.angebote-item img:hover {
+	opacity: 0.7;
+	transition: all 0.25s ease;
+}
+
+.angebote-item p {
+	font-size: 85%;
+	margin-top: 5px;
+	margin-bottom: 40px;
+}
+
+h5 {
+	font-size: 95%;
+	margin: 5px 0 5px 0;
+	padding: 0;
+}
+
+.beschreibung p {
+	margin-left: 25px;
+}
+
+.reduziert {
+	text-decoration: line-through;
+	font-size: 75%;
+	margin-top: 5px;
+}
+
+.produkte a {
+	background-color: #00cf4a;
+	border: solid 2px #00cf4a;
+}
+
+.produkte a:hover {
+	color: #00cf4a;
+	background-color: #ffffff;
+	font-weight: 600;
+	border: solid 2px #ffffff;
+	transition: color 0.25s ease;
+	transition: background-color 0.25s ease;
+}
+
+.orakel {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.orakel-item {
+	width: 15%;
+}
+
+.orakel-item img {
+	width: 70%;
+}
+
+.button.orakel {
+	width: 25%;
+	text-align: center;
+	color: #ffffff;
+	padding: 0 4px 0 4px;
+	border-radius: 0.2em;
+	font-family: 'Reenie Beanie', sans-serif;
+	font-size: 150%;
+	font-weight: 500;
+	background-color: #000000;
+	border: solid 2px #000000;
+	margin: 15px 0 10px 0;
+}
+
+.button.orakel:hover {
+	color: #000000;
+	background-color: #ffffff;
+	font-weight: 600;
+	border: solid 2px #ffffff;
+	transition: color 0.25s ease;
+	transition: background-color 0.25s ease;
+	cursor: pointer;
+}
+
+#orakelergebnis {
+	opacity: 0;
+}
+
+
+
+/*Formatierung des Teilbereichs Öffnungszeiten und Termin*/
+.zeiten {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.zeiten-item {
+	width: 30%;
+	margin-right: 85px;
+}
+
+
+.button.zeiten a {
+	background-color: #b24031;
+	border: solid 2px #b24031;
+}
+
+.button.zeiten a:hover {
+	color: #b24031;
+	background-color: #ffffff;
+	font-weight: 600;
+	border: solid 2px #ffffff;
+	transition: color 0.25s ease;
+	transition: background-color 0.25s ease;
+}
+
+.button.zeiten input {
+	color: #ffffff;
+	padding: 0 4px 0 4px;
+	border-radius: 0.2em;
+	font-family: 'Reenie Beanie', sans-serif;
+	font-size: 150%;
+	font-weight: 500;
+	background-color: #b24031;
+	border: solid 2px #b24031;
+}
+
+.button.zeiten input:hover {
+	color: #b24031;
+	background-color: #ffffff;
+	font-weight: 600;
+	border: solid 2px #ffffff;
+	transition: color 0.25s ease;
+	transition: background-color 0.25s ease;
+	cursor: pointer;
+}
+
+.zeiten input {
+	background-color: #f3e6e6;
+	border-radius: 0.2em;
+	border: none;
+}
+
+.zeiten textarea {
+	background-color: #f3e6e6;
+	border-radius: 0.2em;
+	border: none;
+}
+
+.zeiten .stern {
+	color: #b24031;
+	font-weight: 600;
+}
+
+.zeiten textarea {
+	width: 100%;
+	height: 100%;
+}
+
+/*Formatierung des Teilbereichs Kontakt und Anfahrt*/
+.kontakt {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.kontakt-item {
+	width: 30%;
+	margin-right: 85px;
+}
+
+
+.kontakt a { 
+	color: #0098fd;
+}
+
+.kontakt a:hover {
+	border-bottom: 0.5px solid #0098fd;
+	transition: all 0.25s ease;
+}
+
+.button.kontakt a {
+	color: #ffffff;
+	background-color: #0098fd;
+	border: solid 2px #0098fd;
+	font-weight: 400;
+}
+
+.button.kontakt a:hover {
+	color: #0098fd;
+	background-color: #ffffff;
+	font-weight: 600;
+	border: solid 2px #ffffff;
+	transition: color 0.25s ease;
+	transition: background-color 0.25s ease;
+}
+
+.button.kontakt input {
+	color: #ffffff;
+	padding: 0 4px 0 4px;
+	border-radius: 0.2em;
+	font-family: 'Reenie Beanie', sans-serif;
+	font-size: 150%;
+	font-weight: 500;
+	background-color: #0098fd;
+	border: solid 2px #0098fd;
+}
+
+.button.kontakt input:hover {
+	color: #0098fd;
+	background-color: #ffffff;
+	font-weight: 600;
+	border: solid 2px #ffffff;
+	transition: color 0.25s ease;
+	transition: background-color 0.25s ease;
+	cursor: pointer;
+}
+
+.kontakt input {
+	background-color: #cce7f9;
+	border-radius: 0.2em;
+	border: none;
+}
+
+.kontakt textarea {
+	background-color: #cce7f9;
+	border-radius: 0.2em;
+	border: none;
+}
+
+.kontakt .stern {
+	color: #0098fd;
+	font-weight: 600;
+}
+
+.icon {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.icon-item {
+	width: 85%;
+	margin: 15px 5px 10px 0;
+
+}
+
+.bild {
+	width: 10%;
+}
+.bild img {
+	width: 65%;
+}
+
+.kontakt-item.karte  {
+	margin: 0;
+	width: 50%;
+	
+}
+
+.kontakt-item.karte iframe {
+	width: 100%;
+	height: 100%;
+}
+
+/*Formatierung des Teilbereichs Team*/
+.personal {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.personal-item {
+	width: 45%;
+	margin: 5px 5px 20px 5px;
+}
+
+.personal-item img {
+	width: 75%;
+	margin-bottom: 5px;
+}
+
+.personal-item p {
+	margin-bottom: 0;
+}
+
+.team a {
+	color: #fe8900;
+}
+
+.team a:hover {
+	border-bottom: 0.5px solid #fe8900;
+	transition: all 0.25s ease;
+}
+
+.button.team a {
+	color: #ffffff;
+	background-color: #fe8900;
+	border: solid 2px #fe8900;
+}
+
+.button.team a:hover {
+	color: #fe8900;
+	background-color: #ffffff;
+	font-weight: 600;
+	border: solid 2px #ffffff;
+	transition: color 0.25s ease;
+	transition: background-color 0.25s ease;
+}
+
+
+
+/*Formatierung des Teilbereichs Impressum und Datenschutz*/
+.kleingedrucktes {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.kleingedrucktes-item {
+	width: 40%;
+	margin-right: 85px;
+	font-size: 85%;
+}
+
+#impressum .kleingedrucktes-item a {
+	color: #d03fd4;
+}
+
+#impressum .kleingedrucktes-item a:hover {
+	border-bottom: 0.5px solid #d03fd4;
+	transition: all 0.25s ease;
+}
+
+.footer {
+	background-color: #868686;
+	color: #ffffff;
+	text-align: center;
+	padding: 100px;
+}
+
+.footer-item {
+	width: 60vw;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+
+
+/*Formatierung Baustellen Seite*/
+.baustelle {
+	margin: 0;	
+	justify-content: space-around;
+}
+
+.baustelle-item {
+	width: 100%;
+	position: static;
+	margin: 0;
+}
+
+.baustelle img {
+	width: 200%;
+}
+
+.nav-right .baustelle-item:hover {
+	position: static;
+}
+
+

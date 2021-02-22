@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<title>Orakeltheke</title>
+		<meta charset="UTF-8">
+		<meta name="author" content="Sophie Humbert">
+		<meta name="viewport" content="width=device-width, intial-scale=1.0"> 
+		<link rel="stylesheet" href="stylesheet.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class="page">
+			<div class="page-left">
+				<a href="index.html">
+					<img alt="Logo Orakeltheke, Navigation zur Hauptseite" src="bilder/logo.png">
+				</a>
+			</div>
+			<div class="page-right">
+				<div class="nav">
+					<div class="nav-right">
+						<div class="nav-item">
+							<a href="produkte.html">
+								<img alt="Navigation Angebote und Produkte, Flasche mit grüner Flüssigkeit" src="bilder/MG_7682_grün_be_web.png" />
+								<h3>Produkte</h3>
+							</a>
+						</div>
+						<div class="nav-item">
+							<a href="zeiten.html">
+								<img alt="Navigation Öffnungszeiten und Termin buchen, Flasche mit roter Flüssigkeit" src="bilder/MG_7699_rot_be_web.png" />
+								<h3>Termin</h3>
+							</a>
+						</div>
+						<div class="nav-item in">
+							<a href="kontakt.html">
+								<img alt="Navigation Kontakt und Anfahrt, Flasche mit blauer Flüssigkeit" src="bilder/MG_7703_blau_be_web.png" />
+								<h3>Kontakt</h3>
+							</a>
+						</div>
+						<div class="nav-item">
+							<a href="team.html">
+								<img alt="Navigation Einblicke, Flasche mit orangner Flüssigkeit" src="bilder/MG_7706_orange_be_web.png" />
+								<h3>Team</h3>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="content">
+					<div id="kontakt" class="content-item">
+						<h2>Kontakt</h2>
+							<p>So können Sie uns erreichen:</p>
+								<div class="kontakt">
+									<div class="kontakt-item">
+										<h3>Die Orakeltheke</h3>
+										<div class="icon">
+											<div class="icon-item bild">
+												<img alt="Standort Orakeltheke Icon" src="bilder/maps_icon.png">
+											</div>
+											<div class="icon-item">
+												<a target="_blank" href="https://www.openstreetmap.org/#map=16/49.4885/8.4686">Q2 16
+												<br>68161 Mannheim
+												</a>
+											</div>
+											<div class="icon-item bild">
+												<img alt="Telefon Orakeltheke Icon" src="bilder/telefon_icon.png">
+											</div>
+											<div class="icon-item">
+												0621/918169
+											</div>
+											<div class="icon-item bild">
+												<img alt="E-Mail Orakeltheke Icon" src="bilder/mail_icon.png">
+											</div>
+											<div class="icon-item">
+												<a href="mailto:info@orakletheke.de">info@orakletheke.de</a>
+											</div>
+											<div class="icon-item bild">
+												<img alt="Instagram Orakeltheke Icon" src="bilder/instagram_icon.png">
+											</div>
+											<div class="icon-item">
+												<a href="baustelle.html">Social-Media</a>
+											</div>
+										</div>														
+									</div>
+									<div class="kontakt-item karte">
+										<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=8.458554268145235%2C49.483781106477224%2C8.47863864924875%2C49.49325956669761&amp;layer=mapnik"></iframe>
+									</div>
+								</div>
+						</div>
+						
+						<div id="nachricht" class="content-item">
+							<p>Sie können uns auch direkt eine Nachricht über unser Online-Formular hinterlassen:</p>
+							<form method="post" action="">	
+								<div class="kontakt">								
+									<div class="kontakt-item">
+										
+											<legend>
+												<h3>Ihre Kontaktdaten:</h3>
+											</legend>
+											<p>
+												<label for="vorname">Vorname:</label>
+												<span class="stern">*</span>
+												<input type="text" name="vorname" size="20" maxlength="30" id="vorname" />
+											</p>
+											<p>
+												<label for="Nachname">Nachname:</label>
+												<span class="stern">*</span>
+												<input type="text" name="nachname" size="20" maxlength="30" id="nachname" />
+											</p>
+											<p>
+												<label for="mail">E-Mail Adresse:</label>
+												<span class="stern">*</span>
+												<input type="mailto" required="" name="mail" size="20" maxlength="30" id="mail" />
+											</p>	
+									</div>
+									<div class="kontakt-item">	
+											<legend>
+												<label for="nachricht">
+													<h3>Ihre Nachricht:</h3>
+												</label>
+											</legend>	
+											<p>	
+												<br />
+												<textarea rows="10" cols="30" required="" name="nachricht" id="nachricht"> </textarea>
+											</p>
+											<p>
+												<input type="checkbox" name="info" value="ja" id="info" checked="checked" />
+												<label id="news" for="info">Orakel-Newsletter abonnieren</label>
+											</p>	
+											<p class="button kontakt">
+												<input id="absenden" type="submit" value="Absenden" />
+											</p>
+									</div>
+								</div>		
+							</form>
+						</div>
+				</div>
+				<div class="nav-right">
+					<div class="nav-item">
+						<a href="kleingedrucktes.html#impressum">
+							<img alt="Navigation Impressum, Flasche mit lila Flüssigkeit" src="bilder/MG_7688_lila_be_web.png" />
+							<h3>Impressum</h3>
+						</a>
+					</div>
+					<div class="nav-item">
+						<a href="kleingedrucktes.html#datenschutz">
+							<img alt="Navigation Datenschutz, Flasche mit gelber Flüssigkeit" src="bilder/MG_7686_gelb_be_web.png" />
+							<h3>Datenschutz</h3>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+
